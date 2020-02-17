@@ -18,5 +18,9 @@
 </head>
 <body>
 <a href="../index.php">Home</a>
+<br>
+<?php
+echo  "hello world";
+?>
 </body>
 </html>
