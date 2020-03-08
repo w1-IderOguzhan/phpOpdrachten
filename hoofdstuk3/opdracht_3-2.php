@@ -113,7 +113,6 @@ else if($countryName == "Zweden" && $currentAge < 18)
     echo("<p>Hier mag je geen alcohol drinken.</p>");
 }
 
-
 ?>
 </body>
 </html>

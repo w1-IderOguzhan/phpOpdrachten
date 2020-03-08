@@ -18,5 +18,10 @@
     </head>
     <body>
     <a href="../index.php">Home</a>
+
+    <?php
+    include "../include/footer.php"
+    ?>
+
     </body>
     </html><?php

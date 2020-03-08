@@ -6,17 +6,14 @@
  * File: index.php
  */
 ?>
-    <!doctype html>
-    <html>
-    <head>
-        <title>
-            Opdracht
-        </title>
-        <meta charset="UTF-8">
-        <meta name="description" content="">
-        <meta name="keywords" content="">
-    </head>
-    <body>
-    <a href="../index.php">Home</a>
-    </body>
-    </html><?php
+<?php
+include "../include/header.php"
+?>
+
+<?php
+include "script.php"
+?>
+
+<?php
+include "../include/footer.php"
+?>
