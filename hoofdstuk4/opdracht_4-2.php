@@ -12,6 +12,7 @@ include "../include/header.php"
 
 <?php
 include "script.php"
+
 ?>
 
 <?php
