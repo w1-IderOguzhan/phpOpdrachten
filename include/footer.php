@@ -1,5 +1,5 @@
-<?php
-date_default_timezone_set("Europe/Amsterdam");
+ <?php
+/*date_default_timezone_set("Europe/Amsterdam");
 $uur = date("H");
 
 
@@ -20,7 +20,7 @@ elseif  ($uur >12 && $uur <=17);
  else ($uur >17 && $uur <=24);
 {
     echo "Goedenavond";
-}
+}*/
 ?>
 
 </body>
