@@ -56,7 +56,7 @@ while($year >= 2001){
 
     $year--;
     $age--;
-}
+
 // Taak 7
 $task7 = '';
 $years = date('Y');
