@@ -43,23 +43,22 @@ $task6= '';
 $year = date('Y');
 $age = 18;
 
-while($year >= 2001){
-
+while($year >= 2001)
+{
     $task6 .= "<p>In " . $year . " was ik " . $age . " jaar oud</p><br>";
-
-    if($year == 2020){
-        $task6 .= "<p>In " . $year. " ben/word ik " . $age . " jaar oud</p><br>";
-    }
-    elseif ($year == 2001){
+    if ($year == 2020) {
+        $task6 .= "<p>In " . $year . " ben/word ik " . $age . " jaar oud</p><br>";
+    } elseif ($year == 2001) {
         $task6 .= "<p>In " . $year . " ben ik geboren</p><br>";
     }
-
     $year--;
     $age--;
+}
+
 
 // Taak 7
 $task7 = '';
-$years = date('Y');
+$years = 2020;
 for($ages = 18; $ages > 0; $ages--) {
 
     switch ($ages) {
@@ -67,31 +66,30 @@ for($ages = 18; $ages > 0; $ages--) {
             $task7 .= "<p>In $years ben ik $ages geboren en was ik een baby</p>";
             break;
         case 2:
-            $task7 .= "<p>In $years? was ik $ages jaar oud en werd ik een peuter</p>";
+            $task7 .= "<p>In $years was ik $ages jaar oud en werd ik een peuter</p>";
             break;
         case 4:
-            $task7 .= "<p>In $years? was ik $ages jaar oud en werd ik een kleuter</p>";
+            $task7 .= "<p>In $years was ik $ages jaar oud en werd ik een kleuter</p>";
             break;
         case 8:
-            $task7 .= "<p>In $years? was ik $ages jaar oud en werd ik een tiener</p>";
+            $task7 .= "<p>In $years was ik $ages jaar oud en werd ik een tiener</p>";
             break;
         case 12:
-            $task7 .= "<p>In $years? was ik $ages jaar oud en werd ik een puber</p>";
+            $task7 .= "<p>In $years was ik $ages jaar oud en werd ik een puber</p>";
             break;
         case 18:
-            $task7 .= "<p>In $years? was ik $ages jaar oud en werd ik een adolescent</p>";
+            $task7 .= "<p>In $years was ik $ages jaar oud en werd ik een adolescent</p>";
             break;
         case 20:
-            $task7 .= "<p>In $years? was ik $ages jaar oud en werd ik een volwassen</p>";
+            $task7 .= "<p>In $years was ik $ages jaar oud en werd ik een volwassen</p>";
             break;
         default:
-            $task7 .= "<p>In $years? was ik $ages jaar oud</p>";
+            $task7 .= "<p>In $years was ik $ages jaar oud</p>";
             break;
-    }
-    $year--;
-}
-?>
 
-<?php
-include "../include/footer.php"
+    }
+    $years--;
+}
+
+include "../include/footer.php";
 ?>
