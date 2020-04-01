@@ -9,24 +9,18 @@
 <?php
 include "../include/header.php"
 ?>
-
-
-
 <?php
-echo "<br>";
-echo "<br>";
 echo "<h1>Opdracht 4.4</h1>";
-$DaysWeek = array("zondag","maandag","dinsdag","woensdag","donderdag","vrijdag","zaterdag"); //Dit is een array met alle dagen van de week
+$DaysWeek = array("zondag","maandag","dinsdag","woensdag","donderdag","vrijdag","zaterdag"); //alle dagen van de week
 $test = "";
-for($x=0; $x <8; $x++) {
-    $DayNr = date('w', strtotime("+$x days")); //Dit laat de nummer van de dag zien van een week
-    $date = date('d-m-Y', strtotime("+$x days")); //Dit laat de datums zien voor de week
-    $test .= "Dag $DayNr is {$DaysWeek[$DayNr]} $date <br>"; //Hierin laat laat ik zien wat er in de lege string moet staan
+for($x=0; $x <8; $x++) //de loop die alle dagen loopt
+{
+    $DayNr = date('w', strtotime("+$x days")); //de dagen
+    $date = date('d-m-Y', strtotime("+$x days")); //de datum van de dag
+    $test .= "Dag $DayNr is {$DaysWeek[$DayNr]} $date <br>";//dit is het resultaat
 }
 echo $test //Dit zorgt er voor dat het word laten zien op het scherm
 ?>
-
-
 <?php
 include "../include/footer.php"
 ?>
