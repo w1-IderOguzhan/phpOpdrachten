@@ -51,8 +51,8 @@ while($year >= 2001)
     } elseif ($year == 2001) {
         $task6 .= "<p>In " . $year . " ben ik geboren</p><br>";
     }
-    $year--;
-    $age--;
+$year--;
+$age--;
 }
 
 
