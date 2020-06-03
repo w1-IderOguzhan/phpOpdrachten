@@ -17,7 +17,7 @@ include "../Include/header.php"
         <label>Stoplicht kleur?</label>
         <input name="trafficLight" type="radio" value="groen">Groen
         <input name="trafficLight" type="radio" value="oranje">Oranje
-        <input name="trafficLight" type="radio" value="red">Rood<br>
+        <input name="trafficLight" type="radio" value="rood">Rood<br>
         <input type="submit" name="submit" value="submit">
     </form>
 <?php
@@ -31,7 +31,7 @@ if (isset($_POST['submit'])) {
         $trafficLight = $_POST['trafficLight'];
         $ambulance = $_POST['ambulance'];
         echo "Stoplicht staat op $trafficLight en er komt: $ambulance een
-ambulance aan.";
+                ambulance aan.";
         //Bepalen of je wel of niet mag doorrijden
         if ($trafficLight == "groen" && $ambulance == 'nee')
         {
